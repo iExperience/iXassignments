@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   text-align: center;
   font-family: Helvetica;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .wrapper {
@@ -27,9 +35,18 @@ body {
   margin-bottom: 50px;
 }
 
+.buttons {
+  width: 100%;
+}
+
 .button {
   border: 1px dotted LightSlateGrey;
-  padding: 10px;
+  box-sizing: border-box;
+  /*padding: 10px;*/
+  margin: 0;
+  display: inline-block;
+  width: 50%;
+  background-color: SteelBlue;
 }
 
 .bottom-content {
