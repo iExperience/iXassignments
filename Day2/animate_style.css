@@ -31,6 +31,11 @@ th, td {
   margin-bottom: 50px;
 }
 
+.buttons-table {
+  width: 300px;
+  margin: auto;
+}
+
 .button {
   border: 1px dotted LightSlateGrey;
   padding: 10px;
