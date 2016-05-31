@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+
+}
+
+.top-content {
+	border-bottom: 1pt solid gray;
+  margin-top: 120px;
+}
+
+.main-header {
+  font-size: 72px;
+  color: DarkCyan;
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.button {
+  border: 1px dotted LightSlateGrey;
+  padding: 10px;
+}
+
+.bottom-content {
+  margin-top: 30px;
+}
+
+.footer-header {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.footer-credit {
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

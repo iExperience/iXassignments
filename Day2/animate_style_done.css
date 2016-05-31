@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+}
+
+.wrapper {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.main-header {
+  font-size: 80px;
+  padding-bottom: 10px;
+  color: turquoise;
+}
+
+.sub-header {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: gray;
+}
+
+.buttons {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1pt solid gray;
+}
