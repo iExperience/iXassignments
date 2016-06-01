@@ -5,10 +5,13 @@ body {
   font-family: Helvetica;
 }
 
+th, td {
+  border: 1pt solid black;
+}
+
 .wrapper {
   width: 600px;
   margin: auto;
-
 }
 
 .top-content {
@@ -26,6 +29,11 @@ body {
   font-size: 20px;
   color: grey;
   margin-bottom: 50px;
+}
+
+.buttons-table {
+  width: 300px;
+  margin: auto;
 }
 
 .button {
