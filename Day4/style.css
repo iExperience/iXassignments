@@ -7,3 +7,12 @@
   border: 1pt solid blue;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .red {
+    border: 1pt solid green;
+  }
+  .blue {
+    border: 1pt solid pink;
+  }
+}
