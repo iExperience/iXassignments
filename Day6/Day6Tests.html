@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day6 Tests</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.23.1.css">
+	<script src="./day6.js"></script>
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script src="https://code.jquery.com/qunit/qunit-1.23.1.js"></script>
+
+	<script type="text/javascript">
+
+		QUnit.test("average test 1", function( assert ) {
+  			assert.ok(average([1, 2, 3]) === 2, "Passed!" );
+		});
+
+		QUnit.test("average test 2", function( assert ) {
+  			assert.ok(average([0, 0, 0, -1, 1, 6]) === 1, "Passed!" );
+		});
+
+		QUnit.test("assignGrade test 1", function( assert ) {
+  			assert.ok(assignGrade(95) === 'A', "Passed!" );
+		});
+
+		QUnit.test("assignGrade test 2", function( assert ) {
+  			assert.ok(assignGrade(50) === 'F', "Passed!" );
+		});
+
+		QUnit.test("pluralize test 1", function( assert ) {
+  			assert.ok(pluralize(1, "cat") === "1 cat", "Passed!" );
+		});
+
+		QUnit.test("pluralize test 2", function( assert ) {
+  			assert.ok(pluralize(15, "dog") === "15 dogs", "Passed!" );
+		});
+
+		QUnit.test("longestWord test 1", function( assert ) {
+  			assert.ok(longestWord("hey what is up hello how are you doing today") === "hello", "Passed!" );
+		});
+	</script>
+</body>
+</html>
