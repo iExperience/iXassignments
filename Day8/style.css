@@ -3,3 +3,13 @@
   background-color: #FAFAFA;
   border: 1pt solid #ddd;
 }
+
+.list-item {
+  padding: 10px;
+  border-bottom: 1pt solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.list-item:hover {
+  background-color: #EEE;
+}
