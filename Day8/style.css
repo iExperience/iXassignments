@@ -3,3 +3,15 @@
   background-color: #FAFAFA;
   border: 1pt solid #ddd;
 }
+
+.article {
+  padding: 10px;
+  border-bottom: 1pt solid #ddd;
+  
+}
+
+.byline {
+  font-size: 80%;
+  color: gray;
+  font-style: italic;
+}
