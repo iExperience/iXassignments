@@ -47,22 +47,3 @@ window.onload = function() {
     return string;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
