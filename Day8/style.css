@@ -12,4 +12,5 @@
 
 .list-item:hover {
   background-color: #EEE;
+  cursor: not-allowed;
 }
