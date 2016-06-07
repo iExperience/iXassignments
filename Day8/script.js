@@ -1,20 +1,15 @@
 $(document).ready(function() {
-  var url = "https://api.nytimes.com/svc/mostpopular/v2/mostemailed//.json";
+  var url = "https://api.nytimes.com/svc/topstories/v2/opinion.json";
+  var key = "6c1830c231564612bbf5484ce7933e27";
   $.ajax({
-    url: url,
+    url: url + "?api-key=" + key,
     method: 'GET',
-  }).done(function(result) {
-    displayResults(results);
+  }).done(function(response) {
+    console.log("done!", response);
+    displayResults(response.results);
   }).fail(function(err) {
     throw err;
   });
-
-  var results = [
-    {title: "Intro coding class breaks new learning records", byline: "Rafi Khan", url: "http://google.com"},
-    {title: "In bold move, iXperience expands to Antarctica", byline: "Aaron Fuchs", url: "http://google.com"},
-    {title: "When in doubt, just Google it and leave me alone", byline: "Allie Ivener", url: "http://google.com"},
-  ]
-  displayResults(results);
 });
 
 function displayResults(results) {
