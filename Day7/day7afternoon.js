@@ -1,43 +1,38 @@
+// change the color of the text in the div with class "color-div" to red
 function changeColor() {
-	$('.color-div').css('color', 'red');
+	
 }
 
+// add the word "blue" to the div with class "add-div"
 function addToDiv() {
-	$('.add-div').append(" blue");
+	
 }
 
+// add a title to the page
 function addTitle() {
-	$('.title-div').append("<h1>Page Title</h1>");
+	
 }
 
+// alert the text in the selected item of the dropdown
 function getSelected() {
-	var selected = $('#selector option:selected').text();
-	alert(selected);
+	
 }
 
+// change the title to be "New Title"
 function changeText() {
-	$('.title-div').html("<h1>New Title</h1>");
+
 }
 
 $(document).ready(function() {
-	$('.the-button').click(function(){ 
-		changeColor();
+
+  $('.the-button').click(function(){ 
+    //hint: what goes in here?
 	});
-	$('.get-selected').click(function(){ 
-		getSelected();
-	});
-	$('.text-changer').click(function(){ 
-		changeText();
-	});
-	addToDiv();
-	addTitle();
+	
+
+
+  $(".trio").click(function (e) {
+    //hint: look at the currentTarget property
+  });
+
 });
-
-document.onclick = function (e) {
-  console.log(e);
-  var keyElem = document.getElementById("key");
-  keyElem.innerHTML = e.code;
-
-  var codeElem = document.getElementById("code");
-  codeElem.innerHTML = e.keyCode;
-};
