@@ -1,0 +1,176 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+<<<<<<< HEAD
+a {
+  color: gray;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #525252;
+}
+
+.small {
+  font-size: 80%;
+=======
+th, td {
+  border: 1pt solid black;
+}
+
+.small {
+  font-size: 70%;
+>>>>>>> f1c2568b40134ef2eb4d35cd27056b2b40ff49c4
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+.top-content {
+<<<<<<< HEAD
+  border-bottom: 1pt solid gray;
+=======
+	border-bottom: 1pt solid gray;
+>>>>>>> f1c2568b40134ef2eb4d35cd27056b2b40ff49c4
+  margin-top: 120px;
+}
+
+.main-header {
+  font-size: 72px;
+<<<<<<< HEAD
+  color: #FF4377;
+=======
+  color: DarkCyan;
+>>>>>>> f1c2568b40134ef2eb4d35cd27056b2b40ff49c4
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.button {
+<<<<<<< HEAD
+  border: 3px solid #5271FF;
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+
+.button:hover {
+  background-color: #5271FF;
+  color: white;
+  cursor: pointer;
+}
+
+.button .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  border: 1pt solid grey; 
+}
+
+.button:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown .dropdown-item {
+  color: black;
+  padding: 10px 20px;
+  background-color: white;
+  transition: background-color 0.2s;
+  text-align: left;
+}
+
+.dropdown .dropdown-item:hover {
+  background-color: lightgray;
+}
+
+
+=======
+  border: 3px solid #639FA3;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  color: #639FA3;
+  transition: all .2s;
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 600px;
+}
+
+.button:hover {
+  background-color: #639FA3;
+  color: white;
+}
+
+.button:hover .dropdown {
+  /*display: block;*/
+  visibility: visible;
+  color: #639FA3;
+  opacity: 1;
+}
+
+.dropdown {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  border: 1pt solid gray;
+  
+  visibility: hidden;
+  /*display: none;*/
+  opacity: 0;
+  transition: opacity 1s;
+  height: 80%;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+}
+
+>>>>>>> f1c2568b40134ef2eb4d35cd27056b2b40ff49c4
+.bottom-content {
+  margin-top: 30px;
+}
+
+.footer-header {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.footer-credit {
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -39,6 +39,17 @@ th, td {
 .button {
   border: 1px dotted LightSlateGrey;
   padding: 10px;
+  float: left;
+  
+}
+
+.buttons {
+  /*border: 1pt solid blue;*/
+  margin-left: 220px;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .bottom-content {

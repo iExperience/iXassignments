@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+	font-size: 18px;
+}
+
+.container {
+	border: 1pt solid red;
+}
+
+.border {
+	border: 1pt solid black;
+}
+
+@media(max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+	
+}
