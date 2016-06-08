@@ -1,0 +1,13 @@
+.title {
+	text-align: center;
+	font-size: 36px;
+}
+.grid-box {
+	border: blue 1px solid;
+	height: 100px;
+}
+.letter {
+	font-size: 36px;
+	text-align: center;
+	vertical-align: middle;
+}
