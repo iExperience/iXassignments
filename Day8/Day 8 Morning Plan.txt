@@ -1,0 +1,64 @@
+Plan for Day 8 Morning
+
+Product showcase (10 mins)
+Explain the final goal and the plan of action. (5 mins)
+Explain how the game works + set up. (2 mins)
+
+Round 1. (3 minutes)
+   Create a properly formatted HTML skeleton with html, head, and body tags.
+   Add an appropriate title to the correct place
+   Include Bootstrap CSS (not JS) from a CDN in your head
+   Create your own stylesheet called style.css, and link to it in your <head>
+   
+Round 2. (3 minutes)
+   Create a div with class "container". In it, create a div with class "row".
+   In the row, create a col-md-6 with an offset of 3 cols (on md screens)
+   In the col-md-6, create a div with class "wrapper"
+   In your stylesheet, style the wrapper to have a padding of 10px, a background color, and a border
+   In the wrapper add an h1 that has text describing the app
+   Create an input type text with the class "form-control"
+   Beneath your input, create a <ol> with id "list"
+
+<checkpoint> 
+Time in: 6 mins + 1 checkpoint
+
+Round 3. (3 minutes)
+   In your head, include jQuery from a CDN
+   Create a file called script.js and link to it in your HTML
+   Add an ID called "todo-input" to your input.form-control
+   In your script.js file, properly use $(document).ready()
+   
+4. (4 minutes)
+   Inside the $(document).ready() function, add a keyup event handler to 
+   your input (hint: get it by ID using $)
+   Log "enter!" to the console *only* when the enter key is pressed (Google is your friend!!)
+   
+<checkpoint>
+Time in: 13 mins + 2 checkpoints
+
+5. (4 minutes)
+   Change your Javascript so that instead of logging to the console, you call a function called "addToList" (it doesn't exist yet, we'll create it in a second). Pass "addToList" the value that is inside the input. 
+   Hint: your code should now include something like:
+      if (/* enter was pressed */) {
+         addToList(/* value in the input field */);
+      }
+
+6. (4 minutes)
+   *Outside* the $(document).ready() function, define a function called "addToList" that takes one parameter called "value".
+   With jQuery, create a new "li" element and assign it to a variable called "li"
+   Set the html of li to be value
+   Add (i.e. append) li to the ol with id "list"
+   You should now be able to type something into the input, press enter, and have it show up on the screen below the input
+
+7. (2 minutes)
+  Figure out how to clear the input after the element is added
+
+<checkpoint>
+Time in: 23 mins + 3 checkpoints ~= 35 mins
+Including time for changing computers, expected time is 40 minutes
+
+8. CHALLENGE! (Rest of the time)
+  Figure out how to get each list item to delete when clicked.
+
+8A. 
+  Come ask questions about how the code works
