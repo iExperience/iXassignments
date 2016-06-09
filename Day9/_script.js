@@ -4,16 +4,15 @@ $(document).ready(function() {
   $.ajax({
     url: url + "?api-key=" + key,
     method: 'GET',
-    success: function(response) {
-      displayResults(response.results);
-    },
+    success: handleResponse,
     error: function(error) {
       console.log("Error!");
     }
   });
 });
 
-function displayResults(results) {
+function handleResponse(response) {
+  var results = response.results;
   for (var i = 0; i<results.length; i++) {
     var res = results[i];
     var div = $("<div></div>"); // Containing div
