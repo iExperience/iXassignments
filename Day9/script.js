@@ -29,9 +29,3 @@ function handleResponse(response) {
     $("#list").append(response.results[i].title);
   }
 }
-
-
-
-
-
-
