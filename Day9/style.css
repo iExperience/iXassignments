@@ -1,0 +1,8 @@
+.box {
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	transition: top 0.1s;
+	transition: left 0.1s;
+}
