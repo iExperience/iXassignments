@@ -1,0 +1,21 @@
+Challenge 1: View all the petitions
+api.whitehouse.gov/v1/petitions.json
+
+Challenge 2: First 5 petitions
+api.whitehouse.gov/v1/petitions.json?limit=5
+
+Challenge 2+: First petitions numbered 6-10
+api.whitehouse.gov/v1/petitions.json?limit=5&offset=5
+
+Challenge 3: Get all the responses that the 
+White House has issued
+api.whitehouse.gov/v1/responses.json
+
+Challenge 4: Get the responses from the 
+first petition that has title education
+
+First: api.whitehouse.gov/v1/petitions.json?title=education
+Look inside the object and get response_id
+api.whitehouse.gov/v1/responses/{response_id}.json
+api.whitehouse.gov/v1/responses.json?petitionId={petition_id}
+

@@ -1,0 +1,20 @@
+Plan: 
+1. Build the HTML structure
+  Regular stuff: html, head, body, etc.
+  An input element
+  A ordered list for my list
+
+2. Add CSS
+  Import Bootstrap
+  Style so that my content is in the center of the screen
+
+3. Add Javascript
+  Add an id to the input element
+  I'm going to add a keypress event handler to the input
+  Check if the key that was pressed was "enter"
+  Create a new list element
+  Put value from text field in that element
+  Clear the text field
+  Add (append) the list element to the ordered list
+
+4. Challenge: add delete functionality
