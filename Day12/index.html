@@ -1,3 +1,9 @@
+<!-- 
+varName  // camel case
+var_name // snake case
+var-name // kebab case
+VAR_NAME // SCREAMING SNAKE CASE
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +14,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
   <script src="./script.js"></script>
 </head>
-<body ng-app>
+<body ng-app="TodoApp" ng-controller="MainCtrl">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="wrapper">
-          <h1>NYT Top Stories</h1>
-          <input type="text" class="form-control">
-          <div id="list"></div>
+          <h1>My todo list</h1>
+          <form ng-submit="addItem()">
+            <input type="text" class="form-control" ng-model="newItem">
+            <button ng-click="addItem">Submit</button>
+          </form>
+          <ol>
+            <li ng-repeat="item in items">{{item}}</li>
+          </ol>
         </div>
       </div>
     </div>
