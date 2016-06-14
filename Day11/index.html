@@ -5,14 +5,13 @@
   <title>Document</title>
   <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-  <!-- <script src="./script.js"></script> -->
+  <script src="./script.js"></script>
 </head>
-<body ng-app>
+<body ng-app="MainApp" ng-controller="MainCtrl">
   <input type="text" ng-model="myText">
-  <br>
-  <button ng-click="count=count+1; dCount=dCount-1;">Increment and decrement!</button>
-  <!-- <button ng-click="count=count-1">Decrement!</button> -->
-  <p>Count = {{count}}</p>
-  <p>Count = {{dCount}}</p>
+  <p>You typed: {{myText}}</p>
+  <!-- <br> -->
+  <button ng-click="start()">Increment</button>
+  <p>You've clicked {{count}} times</p>
 </body>
 </html>
