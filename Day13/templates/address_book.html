@@ -1,6 +1,7 @@
 <div ng-controller="AddressBookCtrl">
 <div>address book: {{message}}</div>
 <ol>
-  <li ng-repeat="entry in entries">{{entry}}</li>
+  <li ng-repeat="entry in entries track by $index">{{entry}}</li>
 </ol>
+<a href="#/form">Add entries</a>
 </div>
