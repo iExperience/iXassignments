@@ -26,7 +26,8 @@ app.controller("TopStoriesCtrl", function($scope, $http) {
 app.controller("SearchCtrl", function($scope) {
   $scope.searchTerm = "";
   $scope.search = function() {
-
-  }
+    console.log("search clicked");
+    // Code for search here.
+  };
 });
 
