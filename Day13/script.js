@@ -2,36 +2,31 @@ var app = angular.module("RouterApp", ["ngRoute"]);
 
 app.config(function($routeProvider) {
   $routeProvider
-    .when("/form", {
-      templateUrl: "templates/form.html",
-    })
     .when("/", {
-      templateUrl: "templates/address_book.html"
+      templateUrl: "templates/top.html",
+    })
+    .when("/search", {
+      templateUrl: "templates/search.html"
     })
     .otherwise("/");
 });
 
-app.controller("FormCtrl", function($scope, PhoneBookService) {
-  $scope.newEntry = "";
-  $scope.addEntry = function(entry) {
-    PhoneBookService.addEntry(entry);
-    console.log(PhoneBookService.entries);
-    $scope.newEntry = "";
-  };
+app.controller("TopStoriesCtrl", function($scope, $http) {
+  var url = "https://api.nytimes.com/svc/topstories/v2/opinion.json" +
+    "?api-key=6c1830c231564612bbf5484ce7933e27"
+  $scope.articles = [];
+  $http({
+    method: "GET",
+    url: url
+  }).then(function(response) {
+    $scope.articles = response.data.results;
+  });
 });
 
-app.controller("AddressBookCtrl", function($scope, PhoneBookService) {
-  $scope.entries = PhoneBookService.entries;
-  console.log("a", $scope.entries);
+app.controller("SearchCtrl", function($scope) {
+  $scope.searchTerm = "";
+  $scope.search = function() {
+
+  }
 });
 
-app.factory("PhoneBookService", function() {
-  var phoneBookService = {};
-
-  phoneBookService.entries = [];
-  phoneBookService.addEntry = function(entry) {
-    phoneBookService.entries.push(entry);
-  };
-
-  return phoneBookService;
-});

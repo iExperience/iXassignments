@@ -21,8 +21,6 @@ $(document).ready(function() {
 
 function handleResponse(response) {
   console.log(response);
-  // $("#list").html(response.results[].title);
-
   // Show ALL THE TITLES
   for (var i=0; i<response.results.length; i++) {
     // console.log(response.results[i].title);
