@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="./afternoon.js"></script>
+</head>
+<body ng-app="FormApp" ng-controller="FormCtrl">
+  <input type="text" ng-model="person.name">
+  <input type="text" ng-model="person.email">
+  <input type="text" ng-model="person.password">
+  <button ng-click="checkInputs()">Validate</button>
+</body>
