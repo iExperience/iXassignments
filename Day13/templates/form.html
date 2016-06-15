@@ -1,6 +1,7 @@
 <div ng-controller="FormCtrl">
-  {{message}}
-  <input type="text" ng-model="newEntry"> {{newEntry}}
-  <button ng-click="addEntry(newEntry)">Add entry</button>
+  <h1>Add a new entry</h1>
+  <input type="text" ng-model="newEntry" class="form-control">
+  <br>
+  <button ng-click="addEntry(newEntry)" class="btn btn-success">Add entry</button>
   <a href="#/">View all entries</a>
 </div>

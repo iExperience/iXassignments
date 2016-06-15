@@ -1,4 +1,3 @@
-console.log("hey");
 var app = angular.module("RouterApp", ["ngRoute"]);
 
 app.config(function($routeProvider) {
@@ -25,6 +24,7 @@ app.controller("FormCtrl", function($scope, PhoneBookService) {
 app.controller("AddressBookCtrl", function($scope, PhoneBookService) {
   $scope.message = "I'm an address book!";
   $scope.entries = PhoneBookService.entries;
+  console.log("a", $scope.entries);
 });
 
 app.factory("PhoneBookService", function() {
