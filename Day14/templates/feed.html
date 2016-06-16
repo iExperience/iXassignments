@@ -1,0 +1,34 @@
+<div ng-controller="FeedCtrl">
+  <h2>The Props Feed</h2>
+  <a href="#/me">View my props</a>
+  <textarea class="form-control" placeholder="Type something positive here :)" ng-model="newProp.text"></textarea>
+  <div class="row">
+    <div class="col-md-4">
+      <select ng-model="newProp.receiver" ng-options="bru as bru.first_name for bru in brus" class="form-control"></select>
+    </div>
+    <div class="col-md-4">
+      <div class="btn btn-info" ng-click="click()">Validate and send!</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="props-feed">
+    <div class="prop" ng-repeat="prop in props">
+      <p>{{prop.text}}</p>
+      <div>
+        <small>Positivity: {{prop.positivity_score}}</small>
+      </div>
+      <small>By: {{prop.sender.first_name}}</small>
+      <small>To: {{prop.receiver.first_name}}</small>
+    </div>
+  </div> -->
