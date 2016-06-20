@@ -1,0 +1,16 @@
+- Controller in routes
+- OAuth
+  - Overview of how it works
+    - Why? People want security, but not a million accounts
+      - Apps are better with Facebook data!
+    - You can revoke access to your data at any time on Facebook
+- Create a FB App
+  - Add roles
+  - Add redirect URI
+- Enable on Firebase
+- Show login on login page with user
+- Redirect to feed page
+- Use $onAuthStateChange to redirect
+
+
+- Separating files

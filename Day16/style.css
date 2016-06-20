@@ -7,3 +7,11 @@
 .prop {
   padding: 20px 0;
 }
+
+.error {
+  color: red;
+}
+
+.message {
+  color: green;
+}
