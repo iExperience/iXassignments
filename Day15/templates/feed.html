@@ -1,0 +1,7 @@
+<div ng-controller="FeedCtrl">
+  Feed
+  <a href="#/me">me</a>
+  <li ng-repeat="message in messages">{{ message.text }}</li>
+  <input type="text" ng-model="data.text">
+  {{data.text}}
+</div>
