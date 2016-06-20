@@ -16,35 +16,38 @@ app.config(function($routeProvider) {
   })
 });
 
+// - Redirect to Feed if I'm already logged in
+// - Feed to redirect to login if I'm not logged in
+// - Prevent me sending a prop to myself
+
 app.controller("LoginCtrl", function($scope, $location, $firebaseAuth) {
   var auth = $firebaseAuth();
+
   auth.$onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
       $location.path("/");
-    } else {
-      $scope.error = "Please sign in";
     }
   });
+
   $scope.signIn = function() {
-    $scope.message = null;
-    $scope.error = null;
+    $scope.message = "";
+    $scope.error = "";
     auth.$signInWithPopup("facebook")
-      .then(function(result) {
-        console.log(result)
-        $scope.message = "Signed in!";
-        $scope.firebaseUser = result.user;
-      }).catch(function(error) {
+      .catch(function(error) {
         $scope.error = error;
       });
   }
 });
 
-app.controller("FeedCtrl", function($scope, $http, $location, $firebaseAuth, $firebaseArray) {
+app.controller("FeedCtrl", function(
+  $scope, $http, $location, $firebaseAuth, $firebaseArray, $timeout) {
   var auth = $firebaseAuth();
   auth.$onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
       $scope.firebaseUser = firebaseUser;
+      console.log(firebaseUser);
     } else {
+      console.log(firebaseUser);
       $location.path("/login");
     }
   });
@@ -58,15 +61,14 @@ app.controller("FeedCtrl", function($scope, $http, $location, $firebaseAuth, $fi
   $scope.addProp = function() {
     $scope.successMessage = "";
     $scope.errorMessage = "";
-    $scope.sender = $scope.firebaseUser;
     if ($scope.newProp.text && $scope.newProp.receiver) {
       console.log($scope.newProp);
-      // $scope.props.$add($scope.newProp);
-      // $scope.newProp = {};
-      // $scope.successMessage = "Nice! You contributed to the positivity of the world."
-      // $timeout(function() {
-      //   $scope.successMessage = "";
-      // }, 3000);
+      $scope.props.$add($scope.newProp);
+      $scope.newProp = {};
+      $scope.successMessage = "Nice! You contributed to the positivity of the world."
+      $timeout(function() {
+        $scope.successMessage = "";
+      }, 3000);
     } else {
       $scope.errorMessage = "Please make sure to choose a receiver, and add some positive text!"
     }
