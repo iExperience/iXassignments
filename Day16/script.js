@@ -41,6 +41,7 @@ app.controller("LoginCtrl", function($scope, $location, $firebaseAuth) {
 
 app.controller("FeedCtrl", function(
   $scope, $http, $location, $firebaseAuth, $firebaseArray, $timeout) {
+
   var auth = $firebaseAuth();
   auth.$onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser) {
